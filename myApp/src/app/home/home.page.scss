@@ -1,0 +1,29 @@
+/* Agregar animación de entrada a los cards */
+.action-card, .info-card {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.action-card.show, .info-card.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animación de fondo */
+.background-container {
+  position: relative;
+  height: 200px; /* Ajusta según sea necesario */
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

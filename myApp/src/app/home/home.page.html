@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">TeLlevoApp</ion-title>
+    <!-- Botones de Iniciar y Cerrar Sesión en la esquina superior derecha -->
+    <ion-buttons slot="end">
+      <ion-button (click)="irALogin()" color="light">
+        <ion-icon name="log-in-outline"></ion-icon>
+        Iniciar Sesión
+      </ion-button>
+      <ion-button (click)="cerrarSesion()" color="light">
+        <ion-icon name="log-out-outline"></ion-icon>
+        Cerrar Sesión
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+
+  <!-- Imagen de fondo relacionada con la temática de transporte -->
+  <div class="background-container">
+    <img src="assets/Pasajero12.jpg" alt="" class="background-image" />
+  </div>
+
+  <!-- Contenedor semi-transparente para el saludo y las acciones -->
+  <div class="overlay-content">
+    <!-- Saludo al usuario -->
+    <h1 class="welcome-text">¡Bienvenido, {{username}}!</h1>
+    
+    <!-- Card para las acciones de programar o buscar viaje -->
+    <ion-card class="action-card" color="tertiary">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">¿Qué deseas hacer?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button expand="block" color="success" shape="round" (click)="programarViaje()">
+          <ion-icon name="car-outline" slot="start"></ion-icon>
+          Programar un viaje
+        </ion-button>
+        <ion-button expand="block" color="warning" shape="round" (click)="buscarViaje()">
+          <ion-icon name="search-outline" slot="start"></ion-icon>
+          Buscar un viaje
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Card para los objetivos de la App -->
+    <ion-card class="info-card" color="secondary">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Objetivos de TeLlevoApp</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-icon name="time-outline" slot="start"></ion-icon>
+            <ion-label>Reducir tiempos de búsqueda de movilización</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="people-outline" slot="start"></ion-icon>
+            <ion-label>Fomentar el compañerismo</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="school-outline" slot="start"></ion-icon>
+            <ion-label>Incentivar la asistencia presencial</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="leaf-outline" slot="start"></ion-icon>
+            <ion-label>Reducir la huella de carbono</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

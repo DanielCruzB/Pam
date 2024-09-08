@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding login-content">
+  <form (ngSubmit)="ingresar()">
+    <ion-item class="input-item">
+      <ion-label position="floating">Nombre de Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" class="ion-margin-top login-button">
+      Ingresar
+    </ion-button>
+  </form>
+
+  <ion-button expand="block" fill="clear" (click)="restablecerContrasena()" class="secondary-button">
+    ¿Olvidaste tu contraseña?
+  </ion-button>
+
+  <ion-button expand="block" fill="clear" [routerLink]="['/register']" class="secondary-button">
+    ¿No tienes cuenta? Regístrate
+  </ion-button>
+</ion-content>

@@ -1,0 +1,66 @@
+/* reset-password.page.scss */
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f7f9fc; /* Color de fondo claro */
+  }
+  
+  form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  ion-item {
+    margin-bottom: 20px;
+  }
+  
+  ion-item ion-label {
+    color: #555; /* Color de texto más suave */
+    font-size: 1rem;
+  }
+  
+  ion-input {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  ion-button {
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  ion-button[type="submit"] {
+    background-color: #007bff; /* Botón azul para enviar */
+    color: #fff;
+  }
+  
+  ion-button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro al hacer hover */
+  }
+  
+  ion-button[fill="clear"] {
+    color: #007bff; /* Color azul para botones secundarios */
+  }
+  
+  ion-button[fill="clear"]:hover {
+    color: #0056b3; /* Azul más oscuro al hacer hover */
+  }
+  
+  ion-header {
+    background-color: #007bff; /* Encabezado azul */
+    color: #fff;
+  }
+  
+  ion-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  

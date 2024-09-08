@@ -1,0 +1,56 @@
+.login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f3f4f6; /* Fondo suave para contraste */
+  
+    form {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    ion-item.input-item {
+      --background: #fff;
+      --border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+  
+    ion-label {
+      color: #333; /* Color oscuro para texto */
+      font-size: 1rem;
+    }
+  
+    ion-input {
+      font-size: 1rem;
+      color: #333;
+    }
+  
+    .login-button {
+      background-color: #007bff; /* Botón azul con color primario */
+      color: #fff;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5); /* Sombra para darle énfasis */
+    }
+  
+    .login-button:hover {
+      background-color: #0056b3; /* Cambiar a un azul más oscuro al hacer hover */
+    }
+  
+    .secondary-button {
+      color: #007bff;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+  
+    .secondary-button:hover {
+      color: #0056b3;
+    }
+  }
+  
